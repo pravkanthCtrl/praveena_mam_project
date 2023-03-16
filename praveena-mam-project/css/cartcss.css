@@ -1,0 +1,105 @@
+h3{
+  margin-top: 10px;
+  text-align: center;
+  color: #29066b;
+  text-transform: capitalize;
+  font-size: 5vh;
+  font-weight: bolder;
+  text-shadow: 2px 2px rgb(241, 236, 236);
+}
+.cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .item-image img {
+    width: 100%;
+  }
+  
+  .item-details {
+    padding-left: 10px;
+  }
+  
+  .item-details h4 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .item-details p {
+    margin-top: 2vh;
+    text-align: center;
+  }
+
+  .delete-btn{
+  margin-top: 2vh;
+  position: absolute; /* Position the button relative to the nearest positioned ancestor */
+  left: 50%; /* Set the left edge of the button to the middle of the screen */
+  transform: translate(-50%, -50%);
+  }
+
+  .checkout-btn{
+  position: absolute; /* Position the button relative to the nearest positioned ancestor */
+  left: 50%; /* Set the left edge of the button to the middle of the screen */
+  transform: translate(-50%, -50%);
+  }
+  
+  .item-quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-btn {
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .quantity-btn:focus,
+  .quantity-btn:active {
+    outline: none;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  /* .summary-card {
+    position: absolute; 
+    left:50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    width: 100%
+  }
+   */
+  .subtotal,
+  .shipping,
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .subtotal span,
+  .shipping span,
+  .total span {
+    font-weight: bold;
+  }
+  
+  hr {
+    margin: 10px 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .card-div{
+        margin-top:10rem;
+    }
+  }

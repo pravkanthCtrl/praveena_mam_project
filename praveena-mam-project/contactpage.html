@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        h2{
+            text-align: center;
+            font-size: 40px;
+        }
+      .contact-image {
+        background: url('img/contact.png') no-repeat center;
+        background-size: cover;
+        height: 500px;
+      }
+      
+      .contact-form {
+        padding: 50px;
+      }
+      
+      .contact-form h3 {
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      
+      .form-control {
+        border-radius: 0;
+      }
+      
+      button[type="submit"] {
+        border-radius: 0;
+        background-color: #007bff;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Contact Us</h2>
+  </hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 contact-image"></div>
+        <div class="col-md-6 contact-form">
+          <div class="form-group">
+            <h3>Name:</h3>
+            <input type="text" class="form-control" placeholder="Enter your Name" required>
+          </div>
+          <div class="form-group">
+            <h3>E-mail:</h3>
+            <input type="email" class="form-control" placeholder="Enter your E-mail" required>
+          </div>
+          <div class="form-group">
+            <h3>Message:</h3>
+            <textarea class="form-control" rows="4" placeholder="Enter your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

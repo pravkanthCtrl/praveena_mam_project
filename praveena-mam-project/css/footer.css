@@ -1,0 +1,31 @@
+.footer-container{
+  padding-bottom: 1rem;
+  background-color: #333 !important;
+}
+.footer-container .main-footer{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 2rem 0;
+  color: white;
+  margin-top: -0.6rem !important;
+
+}
+
+.footer-line{
+  border-bottom: 2px solid rgb(85, 84, 84);
+  width: 80%;
+  margin: auto;
+}
+.footer-container p{
+  margin-top: 1rem;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .footer-container .main-footer{
+    flex-direction: column;
+  }
+  .main-footer div{
+    margin-bottom: 1.5rem;
+  }
+}

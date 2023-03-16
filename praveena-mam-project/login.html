@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #f1f1f1;
+      }
+      
+      .login-form {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        margin: auto;
+        max-width: 400px;
+        padding: 30px;
+        text-align: center;
+      }
+      
+      h2 {
+        margin-bottom: 30px;
+      }
+      
+      input[type="email"],
+      input[type="password"] {
+        border-radius: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 100%;
+      }
+      
+      button[type="submit"] {
+        border-radius: 0;
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 login-form">
+          <h2>Login</h2>
+          <form onsubmit="return login()">
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email" id="email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function login() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        
+        if (email === "admin@admin.com" && password === "123456") {
+          alert("Login successful");
+          return true;
+        } else {
+          alert("Incorrect email or password");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
